@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-style: oblique;
+    font-size: 21px;
+    overflow: hidden;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.container,.container-1,.container-2{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0;
+}
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 4s linear infinite  ;
+}
+@keyframes zoom-out{
+  
+   
+    100%{
+        width: 100%;
+    }
+}
+
+.text-area{
+    width: 600px;
+    position: absolute;
+    top:200px;
+    left: 100px;
+    color: #fff;
+    animation: text-up 4s linear infinite;
+    transform: translateY(100px);
+}
+
+@keyframes text-up {
+10%{
+    transform: translateY(0px);
+}
+100%{
+    transform: translateY(0px);
+}
+}
+
+.text-area h1{
+    margin-bottom: 30px;
+}
+.text-area p{
+    margin-top: 60px;
+    line-height: 20px;
+}
+.text-area span {
+    background-color: red;
+    height: 5px;
+    width: 150px;
+left: 0px ;
+position: absolute;
+
+
+}
+.container{
+    animation: slide1 12s  linear infinite ;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+   75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.container-1{
+    animation: slide2 12s  linear infinite ;
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+   75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}.container-2{
+    animation: slide3 12s  linear infinite ;
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+ 80%{
+        visibility:visible;
+    }
+    100%{
+        visibility:hidden;
+    }
+}
+T1{
+    animation-delay: 1s;
+}
+T2{
+    animation-delay: 3s;
+}
+T3{
+    animation-delay: 6s;
+}

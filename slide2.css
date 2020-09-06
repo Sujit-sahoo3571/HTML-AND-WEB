@@ -1,0 +1,95 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #fff;
+    overflow: hidden;
+}
+img{
+    height: 100vh;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    animation: zoom-out 5s linear infinite;
+}
+@keyframes zoom-out {
+    100%{
+        width: 120%;
+    }
+}
+.banner1{
+    animation: box1 10s linear infinite;
+}
+@keyframes box1{
+    0%{ visibility: visible;}
+   25%{ visibility: hidden;}
+    50%{
+        visibility: hidden;
+    }
+    75%{visibility: hidden;}
+   
+    100%{
+        visibility: visible;
+    }
+}
+.banner2{
+animation: box2 10s linear infinite;
+}
+@keyframes box2{
+    0%{ visibility: hidden;}
+    25%{ visibility: hidden;}
+
+    50%{
+        visibility:visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    } 
+}
+.banner3{
+animation: box3 10s linear infinite;
+}
+@keyframes box3{
+    0%{ visibility: hidden;}
+    25%{ visibility: hidden;}
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+.textbox{
+    position: absolute;
+    width: 600px;
+    padding: 4px;
+    left: 100px;
+    top: 200px;
+ 
+.textbox h1{
+    margin-bottom: 40px;
+}
+.textbox p{
+    margin-top: 40px;
+    font-style: oblique;
+    font-family: sans-serif;
+
+}
+.textbox span{
+    width: 150px;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    left: 0px;
+    top: 100px;
+   
+
+}
